@@ -1,8 +1,7 @@
-import Config from 'config';
 import app from './server';
 
-let config = Config;
+let PORT = process.env.PORT || 8000;
 
- app.listen(config.port, function() {
-  console.log('listening at',config.port);
+app.listen(PORT, function() {
+  console.log('listening at', PORT);
 });
