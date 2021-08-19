@@ -9,7 +9,7 @@ export const protectFunction = (authorization) => {
     }
     return null
   } catch (err) {
-    console.error(err)
+    console.error("Invalid JWT Token!");
     return null
   }
 }
